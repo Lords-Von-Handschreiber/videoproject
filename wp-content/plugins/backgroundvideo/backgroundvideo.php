@@ -19,8 +19,6 @@ class BackgroundVideo{
     }
 
     public static function enqueue_and_register_my_scripts() {
-      //wp_register_script( 'bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js' );
-      //wp_register_script( 'jquery.tubular', esc_url( get_template_directory_uri() ).'/js/jquery.tubular.1.0.js' );
       wp_enqueue_script( 'jquery.tubular', esc_url( get_template_directory_uri() ).'/js/jquery.tubular.1.0.js', array('jquery') );
     }
 
