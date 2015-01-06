@@ -10,8 +10,7 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-   <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.tubular.1.0.js"></script>
-
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.tubular.1.0.js"></script>
 </head>
 <body>
 <div id="wrapper">
