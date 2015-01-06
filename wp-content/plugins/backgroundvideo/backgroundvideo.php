@@ -12,8 +12,6 @@ add_shortcode( 'showvideo', array( BackgroundVideo::get_instance(), 'showvideo' 
 
 add_action( 'wp_enqueue_scripts', array( BackgroundVideo::get_instance(), 'enqueue_and_register_my_scripts' ) );
 
-// add_action('wp_head', array( BackgroundVideo::get_instance(), 'getHeaderHtml' ) );
-
 class BackgroundVideo{
     private static $instance = NULL;
 
@@ -25,18 +23,12 @@ class BackgroundVideo{
       //wp_register_script( 'jquery.tubular', esc_url( get_template_directory_uri() ).'/js/jquery.tubular.1.0.js' );
       wp_enqueue_script( 'jquery.tubular', esc_url( get_template_directory_uri() ).'/js/jquery.tubular.1.0.js', array('jquery') );
     }
-/*
-    public static function getHeaderHtml() {
-      $output = "<script src='".esc_url( get_template_directory_uri() )."/js/jquery.tubular.1.0.js'></script>";
 
-      echo $output;
-    }
-*/
     public static function showvideo($atts){
         return "
         <script>
         (function($) {
-            $('#wrapper').tubular({ videoId: '".$atts["videoid"]."', start: 3 });
+            $('#wrapper').tubular({ videoId: '".$atts["videoid"]."' });
         })(jQuery);
         </script>
         ";
