@@ -32,9 +32,9 @@ class BackgroundVideo{
     function showvideo($atts){
         return "
         <script>
-        $(document).ready(function() {
+        $(function() {
             $('#wrapper').tubular({ videoId: '".$atts["videoid"]."', start: 3 });
-        });
+        })();
         </script>
         ";
 
