@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
     <?php wp_head(); ?>
 </head>
 <body>
